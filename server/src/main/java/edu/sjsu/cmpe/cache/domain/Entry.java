@@ -1,11 +1,12 @@
 package edu.sjsu.cmpe.cache.domain;
 
-import javax.validation.constraints.NotNull;
-
 import org.hibernate.validator.constraints.NotEmpty;
 import org.joda.time.DateTime;
 
-public class Entry {
+import javax.validation.constraints.NotNull;
+import java.io.Serializable;
+
+public class Entry implements Serializable {
 
     @NotNull
     private long key;
